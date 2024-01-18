@@ -3,7 +3,7 @@
 
 [![Actions Status](https://github.com/dandysi-labs/laravel-openswoole-stats/workflows/Tests/badge.svg)](https://github.com/dandysi-labs/laravel-openswoole-stats/actions)
 
-If you are using Laravel Octane, this package allows you to expose your Open Swoole stats to a scraping service like Prometheus.
+If you are using Laravel Octane, this package allows you to expose your Open Swoole stats to a scraping service like Prometheus. Once installed you can access the metrics at the `/openswoole-stats` endpoint of your app.
 
 ## Install
 
