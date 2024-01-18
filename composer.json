@@ -1,6 +1,6 @@
 {
     "name": "dandysi/laravel-openswoole-stats",
-    "description": "A laravel package to expose open swoole metrics to a scraping service like Prometheus",
+    "description": "A laravel package to expose Open Swoole metrics to a scraping service like Prometheus",
     "keywords": ["php", "laravel", "openswoole", "metrics", "prometheus"],
     "type": "library",
     "license": "MIT",
