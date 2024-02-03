@@ -16,7 +16,7 @@ composer require dandysi/laravel-openswoole-stats
 ## Config
 
 ```bash
-php artisan vendor:publish --provider=Dandysi\\Laravel\\OpenSwooleStats\\OpenSwooleStatsServiceProvider
+php artisan vendor:publish --provider="Dandysi\Laravel\OpenSwooleStats\OpenSwooleStatsServiceProvider"
 ```
 
 Configure this package by changing the values in `config/openswoole-stats.php`.
