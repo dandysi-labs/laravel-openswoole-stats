@@ -16,6 +16,7 @@ jobs:
       matrix:
         os: [ ubuntu-latest ]
         php: [ 8.2 ]
+        laravel: [11.*]
         dependency-version: [ prefer-stable ]
 
     name: PHP ${{ matrix.php }} - Laravel ${{ matrix.laravel }} - ${{ matrix.dependency-version }} - ${{ matrix.os }}
