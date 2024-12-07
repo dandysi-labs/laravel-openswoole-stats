@@ -15,10 +15,13 @@ jobs:
       fail-fast: true
       matrix:
         os: [ ubuntu-latest ]
-        php: [ 8.2 ]
-        laravel: [ 11 ]
+        php: [ 8.1, 8.2 ]
+        laravel: [ 10.*, 11.* ]
         dependency-version: [ prefer-stable ]
-
+        exclude:
+            - laravel: 10.*
+              php: 8.2
+              
     name: PHP ${{ matrix.php }} - Laravel ${{ matrix.laravel }} - ${{ matrix.dependency-version }} - ${{ matrix.os }}
 
     steps:
@@ -39,7 +42,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          composer require "laravel/framework:${{ matrix.laravel }}.*" --no-interaction --no-update
+          composer require "laravel/framework:${{ matrix.laravel }}" --no-interaction --no-update
           composer update --${{ matrix.dependency-version }} --prefer-dist --no-interaction
 
       - name: Execute tests
