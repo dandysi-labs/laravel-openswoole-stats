@@ -16,7 +16,7 @@ jobs:
       matrix:
         os: [ ubuntu-latest ]
         php: [ 8.2 ]
-        laravel: [11]
+        laravel: [ 11 ]
         dependency-version: [ prefer-stable ]
 
     name: PHP ${{ matrix.php }} - Laravel ${{ matrix.laravel }} - ${{ matrix.dependency-version }} - ${{ matrix.os }}
@@ -39,7 +39,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          composer require "laravel/framework:${{ matrix.laravel }}" --no-interaction --no-update
+          composer require "laravel/framework:${{ matrix.laravel }}.*" --no-interaction --no-update
           composer update --${{ matrix.dependency-version }} --prefer-dist --no-interaction
 
       - name: Execute tests
