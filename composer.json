@@ -21,9 +21,9 @@
         }
     },
     "require": {
-        "php": "^8.1",
-        "illuminate/support": "^10.37|^11.0",
-        "illuminate/console": "^10.37|^11.0",
+        "php": "^8.2",
+        "illuminate/support": "^11.0",
+        "illuminate/console": "^11.0",
         "ext-openswoole": ">=22.0",
         "openswoole/core" : "^22.0.0"
     },
